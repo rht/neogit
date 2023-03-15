@@ -157,7 +157,7 @@ function Buffer:show()
     api.nvim_set_current_buf(self.handle)
     win = api.nvim_get_current_win()
   elseif kind == "vsplit" then
-    vim.cmd("bot vsplit")
+    vim.cmd("bot 100 vsplit")
     api.nvim_set_current_buf(self.handle)
     win = api.nvim_get_current_win()
   elseif kind == "floating" then
